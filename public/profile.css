@@ -1,0 +1,23 @@
+body{
+    background: url("/img/cafeBackground.jpg");
+}
+
+.loginInfo{
+    background: rgba(0, 255, 179, 0.829);
+    color: black;
+}
+
+h3{
+    color: white;
+    background: rgba(18, 185, 27, 0.671);
+    padding: 2px;
+}
+
+th{
+    background: rgba(88, 250, 82, 0.685);
+}
+
+tr{
+    background: rgba(18, 112, 60, 0.829);
+    color: white;
+}

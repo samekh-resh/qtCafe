@@ -1,0 +1,29 @@
+body {
+  background: blanchedalmond;
+}
+
+.container {
+  background: blue;
+  width: 500px;
+  height: 300px;
+  margin-top: 15%;
+  border-radius: 10% 30% 50% 70%;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.email {
+  border-radius: 10% 30% 40% 40%;
+}
+
+.signUp {
+  background: blue;
+  width: 500px;
+  height: 300px;
+  margin-top: 15%;
+  border-radius: 10% 30% 50% 55%;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}

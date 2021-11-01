@@ -1,0 +1,17 @@
+update admin login to email login
+cashier enters customer's name and order (tall venti grande) which is added to queue
+email sees order in queue and checks off that they completed it
+click complete to see completed orders
+completed orders should show which email completed order
+email should have a list of orders that they've completed
+view outstanding orders  
+app says the customer's name out loud when order is complete
+
+Community:
+-Add delete button for items on order.ejs
+-Get all items selected to show up in database
+
+-Fix error when clicking certain buttons => order.js:9 Uncaught TypeError: Cannot read properties of undefined (reading 'innerText')
+    at HTMLButtonElement.order (order.js:9)
+
+-Add total to database

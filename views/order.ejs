@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS:menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="customerNameSection">
+        <label for="customerName">Customer's name:</label>
+        <input type="text" id="customerName" required />
+        <button id="submit" action="submit">Submit</button>
+        <!-- <ul>
+          <li class="total"></li>
+        </ul> -->
+      </div>
+      <section class="routesForPages">
+        <button><a href="/profile"> see orders</a></button>
+      </section>
+      <section class="routesForPages">
+        <button><a href="/"> home</a></button>
+      </section>
+      <section class="routesForPages">
+        <button><a href="/login">login</a></button>
+      </section>
+    </header>
+    <h1>Menu:</h1>
+
+    <section class="choices">
+      <section class="designBox">
+        <div id="coffee">
+          <button
+            class="drink"
+            id="coffeeSmall"
+            value="2.50"
+            data-order="Small coffee"
+          >
+            <span>Small coffee</span><br /><br />$2.50
+          </button>
+          <button
+            class="drink"
+            id="coffeeMedium"
+            value="3.50"
+            data-order="Medium coffee"
+          >
+            <span>Medium coffee</span><br /><br />$3.50
+          </button>
+          <button
+            class="drink"
+            id="coffeeLarge"
+            value="4.50"
+            data-order="Large coffee"
+          >
+            <span>Large coffee</span><br /><br />$4.50
+          </button>
+        </div>
+      </section>
+      <section class="designBox">
+        <div id="tea">
+          <button
+            class="drink"
+            id="teaSmall"
+            value="2.50"
+            data-order="Small tea"
+          >
+            <span>Small tea</span><br /><br />$2.50
+          </button>
+          <button
+            class="drink"
+            id="teaMedium"
+            value="3.50"
+            data-order="Medium tea"
+          >
+            <span>Medium tea</span><br /><br />$3.50
+          </button>
+          <button
+            class="drink"
+            id="teaLarge"
+            value="4.50"
+            data-order="Large tea"
+          >
+            <span>Large tea</span><br /><br />$4.50
+          </button>
+        </div>
+      </section>
+      <section class="designBox">
+        <div id="juice">
+          <button
+            class="drink"
+            id="juiceSmall"
+            value="3.50"
+            data-order="Small juice"
+          >
+            <span>Small juice</span><br /><br />$3.50
+          </button>
+          <button
+            class="drink"
+            id="juiceMedium"
+            value="4.50"
+            data-order="Medium juice"
+          >
+            <span>Medium juice</span><br /><br />$4.50
+          </button>
+          <button
+            class="drink"
+            id="juiceLarge"
+            value="5.50"
+            data-order="Large juice"
+          >
+            <span>Large juice</span><br /><br />$5.50
+          </button>
+        </div>
+      </section>
+      <section class="designBox">
+          <h4>Order</h4>
+        <div id="totalBox">
+          
+          <ul>
+            <li class="total"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="designBox">
+
+      </section> -->
+      <!-- <div id="smoothie">
+        <button class="drink" id="teaSmall" value="2.50" data-order="Strawberry">
+          <span>Strawberry</span><br /><br />$2.50
+        </button>
+        <button class="drink" id="teaSmall" value="2.50" data-order="Mixed Berry">
+          <span>Mixed Berry</span><br /><br />$2.50
+        </button>
+        <button
+          class="drink"
+          id="teaMedium"
+          value="3.50"
+          data-order="Blueberry"
+        >
+          <span>blueBerry</span><br /><br />$3.50
+        </button>
+        <button class="drink" id="teaLarge" value="4.50" data-order="mango">
+          <span>Mango</span><br /><br />$4.50
+        </button>
+        <button class="drink" id="teaLarge" value="4.50" data-order="Citrus">
+          <span>Citrus</span><br /><br />$4.50
+        </button>
+        
+      </div> 
+    
+    <div id="additives">
+
+      
+        <button class="additive" id="regSugar" value=".25" data-order="Regular Sugar">
+          <span>Regular Sugar</span><br /><br />$0.25
+        </button>
+        <button class="additive" id="splenda" value=".25" data-order="Splenda">
+          <span>Splenda</span><br /><br />$0.50
+        </button>
+        <button class="additive" id="agave" value=".25" data-order="Agave">
+          <span>Agave</span><br /><br />$0.75
+        </button>
+
+        <button class="drink" id="teaSmall" value="2.50" data-order="Mixed Berry">
+          <span>Mixed Berry</span><br /><br />$2.50
+        </button>
+        <button
+          class="drink"
+          id="teaMedium"
+          value="3.50"
+          data-order="Blueberry"
+        >
+          <span>blueBerry</span><br /><br />$3.50
+        </button>
+        <button class="drink" id="teaLarge" value="4.50" data-order="mango">
+          <span>Mango</span><br /><br />$4.50
+        </button>
+        <button class="drink" id="teaLarge" value="4.50" data-order="Citrus">
+          <span>Citrus</span><br /><br />$4.50
+        </button>
+        
+      </div>-->
+
+      <!-- discuss with nathan about how he did his additives. So we can add cream for the coffee or tea. Juice you can decide if you want a straw or not.  -->
+    </section>
+<!-- juice will have different berries to put in your juice, smoothie will have different herbs and berries -->
+  <!-- <div class='coffeeAdditives'></div>
+  <div class='teaAdditives'></div>
+  <div class='juiceAdditives'></div> -->
+
+    <script src="order.js"></script>
+  </body>
+</html>
+
+<!-- what's left, delete button and to add elements to a completed folder. 
+
+
+delete button? put the id in that element of the trash, select that for the event listener, and then just push that id through. see if that works. remember to change it int he js main and server side. review ellie app, chore list and roulette!!!-->

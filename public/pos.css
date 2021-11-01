@@ -1,0 +1,102 @@
+body {
+  background: rgb(250, 133, 133);
+  text-align: center;
+}
+button:hover{
+  background:rgb(248, 105, 105);
+}
+
+header {
+  border: black solid 1px;
+  display:flex;
+  width: 50%;
+  height:25px;
+  padding: 14px;
+  background: rgba(20, 185, 235, 0.788);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  margin:auto;
+  margin-top: 2%;
+  border-radius: 2px;
+}
+.header button {
+  margin: 2px;
+  border-radius: 2px;
+  width: 30px;
+  height: 40px;
+}
+
+#customerNameSection{
+  flex:3;
+}
+
+.routesForPages{
+  flex:1;
+}
+ul{
+  margin: 0%;
+  padding: 0%;
+}
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  margin: 7px 15px 7px 15px;
+}
+
+.designBox{
+  flex:1;
+  border: 1px solid black;
+  height: 300px;
+  box-shadow: 12px 12px 2px 1px rgba(20, 185, 235, 0.788);
+  flex: 1; 
+  width: 150px;
+  padding: 5%;
+  margin:5%;
+  border-radius: 2px;
+  background: rgb(189, 47, 59);
+}
+
+#coffee,
+#tea,
+#juice,
+#smoothie, #totalBox {
+  border: 1px solid black;
+  height: 250px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  /* flex: 1; */
+  margin: 10%;
+  width: 100px;
+  padding: 10px;
+  border-radius: 2px;
+  overflow:auto;
+  background: rgb(250, 133, 133);
+}
+
+.choices button {
+  height: 75px;
+  margin: auto;
+  border-radius: 10% 15% 10% 10%;
+  float:left;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+li {
+  list-style: none;
+}
+
+.submission{
+  border: 1px solid black;
+  width: 100%;
+}
+
+#totalBox{
+  overflow:auto;
+  height: 180px;
+  background: rgba(20, 185, 235, 0.788);
+}
+
+
+
+

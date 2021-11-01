@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS: prfl</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+  
+  </head>
+<body>
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Admin Profile</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-2 loginInfo">
+            
+                <h4><span class="fa fa-user"></span> (lcl) User!</h4>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <span class="hide"><strong>id</strong>: <%= user._id %></span><br>
+                        <span ><strong>name</strong>: <%= user.local.email %></span><br>
+                        <span class="hide"><strong>password</strong>: <%= user.local.password %></span>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            
+        </div>
+        <div class="col-sm-10">
+          <h3>Order Queue</h3>          
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Order</th>
+                <th scope="col">Status</th>
+                <th scope="col">Barista</th>
+                <th scope="col">Delete</th>
+
+              </tr>
+            </thead>
+
+            <tbody>
+       
+              <% for(var i=0 ; i<coffeeOrders.length; i++) {%>
+               
+                <tr>
+                  <th scope="row"><%= i + 1 %></th>
+                  <input class='whereTheId' type='hidden' value=<%= coffeeOrders[i]._id %> >
+                  <td><%= coffeeOrders[i].customerName %></td>
+                  
+                  
+                  <td><span><%= coffeeOrders[i].coffee %></span> <br> <span><%= coffeeOrders[i].tea %></span><br><span><%= coffeeOrders[i].juice %></span></td>
+
+                  <% if (coffeeOrders[i].status) { %>
+                    <td><span class="completed">Complete</span></td>
+                <% } else { %>
+                  <td><span  class="completed">Pending</span></td>
+                <% } %>
+                 
+                  <td><%= coffeeOrders[i].barista %></td><td><i id="<%= coffeeOrders[i]._id %>" class="fas fa-trash-alt"></i></td>
+                  
+              </tr> 
+              <% } %>
+            </tbody>
+          </table>
+          <!-- data-orderid=<%#coffeeOrders[i]._id %> -->
+          <button> <a href="/completedOrders">completedOrders</a></button>
+          <button> <a href="/order"> place order</a></button>
+          <button> <a href="/"> home</a></button>
+
+</div>
+
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+
+</body>
+</html>
