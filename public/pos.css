@@ -1,102 +1,144 @@
 body {
-  background: rgb(250, 133, 133);
+  background: url("/img/secondBackground.jpg");
   text-align: center;
+  color: #4c5760;
 }
-button:hover{
-  background:rgb(248, 105, 105);
+button:hover {
+  background: rgb(248, 105, 105);
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   border: black solid 1px;
-  display:flex;
+  display: flex;
   width: 50%;
-  height:25px;
+  height: 45px;
   padding: 14px;
-  background: rgba(20, 185, 235, 0.788);
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-  margin:auto;
+  background: #66635B;
+  /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+  margin: auto;
   margin-top: 2%;
-  border-radius: 2px;
+  border-radius: 30px;
+  color:white; 
 }
-.header button {
+header button {
   margin: 2px;
-  border-radius: 2px;
-  width: 30px;
+  border-radius: 30px;
   height: 40px;
 }
-
-#customerNameSection{
-  flex:3;
+.routesForPages button{
+  width: 100%;
 }
 
-.routesForPages{
-  flex:1;
+
+#customerNameSection {
+  flex: 3;
 }
-ul{
+#customerName {
+  width: 25%;
+}
+
+.routesForPages {
+  flex: 1;
+}
+ul {
   margin: 0%;
   padding: 0%;
 }
 .choices {
   display: flex;
   justify-content: space-evenly;
-  padding: 5%;
-  margin: 7px 15px 7px 15px;
+  padding: 2%;
+  /* margin: 7px 15px 7px 15px; */
 }
 
-.designBox{
-  flex:1;
-  border: 1px solid black;
-  height: 300px;
-  box-shadow: 12px 12px 2px 1px rgba(20, 185, 235, 0.788);
-  flex: 1; 
-  width: 150px;
-  padding: 5%;
-  margin:5%;
+.designBox {
+  /* box-shadow: 12px 12px 2px 1px rgba(20, 185, 235, 0.788); */
+  flex: 1;
+  width: 120px;
+  padding: 2%;
   border-radius: 2px;
-  background: rgb(189, 47, 59);
 }
 
 #coffee,
 #tea,
 #juice,
-#smoothie, #totalBox {
+#smoothie,
+#totalBox,
+#additives,
+#muffin,
+#bagel,
+#donut,
+#scone {
   border: 1px solid black;
   height: 250px;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   /* flex: 1; */
-  margin: 10%;
-  width: 100px;
+  margin: auto;
+  width: 100%;
   padding: 10px;
-  border-radius: 2px;
-  overflow:auto;
-  background: rgb(250, 133, 133);
+  border-radius: 10px;
+
+  /* overflow:auto; */
+  background: #A59E8C;
+}
+
+#totalBox,
+#additives {
+  overflow: auto;
+  width: 125px;
+  background: #66635B;
+  color: white;
+}
+
+/* swatch colors */
+/* #4C5760
+#93A8AC
+#D7CEB2
+#A59E8C
+#66635B */
+h1 {
+  margin: auto;
+  margin-top:2%;
+  margin-bottom: 0%;
+  padding: 0%;
+  background:  #4c5760;
+  border-radius: 30px;
+  width: 10%;
+  color:rgb(236, 224, 199);
+  font-size: 4vw;
+  box-shadow: 6px 6px 2px 1px rgba(252, 216, 192, 0.938);
+}
+h4 {
+  margin: auto;
+  background:#4c5760;
+  border-radius: 30px;
+  width: 50%;
+  font-size: 1.3vw;
+  position: relative;
+  left: 10px;
+   color:rgb(236, 224, 199);
 }
 
 .choices button {
-  height: 75px;
+  height: 17%;
   margin: auto;
-  border-radius: 10% 15% 10% 10%;
-  float:left;
+  float: left;
   width: 100%;
   margin-bottom: 10px;
-  border-radius: 2px;
+  font-size: 100%;
+  border-radius: 30px;
+  font-size: 1.6vw;
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
 li {
   list-style: none;
 }
 
-.submission{
+.submission {
   border: 1px solid black;
   width: 100%;
 }
-
-#totalBox{
-  overflow:auto;
-  height: 180px;
-  background: rgba(20, 185, 235, 0.788);
-}
-
-
-
-

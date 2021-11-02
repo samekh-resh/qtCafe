@@ -10,9 +10,10 @@
   </head>
 
   <body>
+    <h1>Café Resh</h1>
     <header>
       <div id="customerNameSection">
-        <label for="customerName">Customer's name:</label>
+        <label for="customerName">Name:</label>
         <input type="text" id="customerName" required />
         <button id="submit" action="submit">Submit</button>
         <!-- <ul>
@@ -20,7 +21,7 @@
         </ul> -->
       </div>
       <section class="routesForPages">
-        <button><a href="/profile"> see orders</a></button>
+        <button><a href="/profile">orders</a></button>
       </section>
       <section class="routesForPages">
         <button><a href="/"> home</a></button>
@@ -29,167 +30,446 @@
         <button><a href="/login">login</a></button>
       </section>
     </header>
-    <h1>Menu:</h1>
+   
+    <!-- driunk menu -->
+   
 
+ <section class="choices">
+  <section class="designBox">
+    <h4>coffee</h4>
+    <div id="coffee">
+      <button
+        class="drink"
+        id="microCoffee"
+        value="2.50"
+        data-order="Micro Coffee"
+      >
+        <span>Micro Coffee</span>  $2.45
+      </button>
+      <button
+        class="drink"
+        id="coffeeSmall"
+        value="2.50"
+        data-order="Small coffee"
+      >
+        <span>Small coffee</span>  $2.50
+      </button>
+      <button
+        class="drink"
+        id="coffeeMedium"
+        value="3.50"
+        data-order="Medium coffee"
+      >
+        <span>Medium coffee</span>  $3.50
+      </button>
+      <button
+        class="drink"
+        id="coffeeLarge"
+        value="4.50"
+        data-order="Large coffee"
+      >
+        <span>Large Coffee</span>  $4.50
+      </button>
+      <button
+        class="drink"
+        id="coffeeXtraLarge"
+        value="4.50"
+        data-order="Xtra Large coffee"
+      >
+        <span>Xtra Large Coffee</span>  $7.50
+      </button>
+    </div>
+  </section>
+
+  <section class="designBox">
+    <h4>tea</h4>
+    <div id="tea">
+      <button
+        class="drink"
+        id="microTea"
+        value="2.50"
+        data-order="Micro Tea"
+      >
+        <span>microTea</span>  $2.45
+      </button>
+
+      <button
+        class="drink"
+        id="teaSmall"
+        value="2.50"
+        data-order="Small tea"
+      >
+        <span>Small tea</span>  $2.50
+      </button>
+      <button
+        class="drink"
+        id="teaMedium"
+        value="3.50"
+        data-order="Medium tea"
+      >
+        <span>Medium tea</span>  $3.50
+      </button>
+      <button
+        class="drink"
+        id="teaLarge"
+        value="4.50"
+        data-order="Large tea"
+      >
+        <span>Large tea</span>  $4.50
+      </button>
+      <button
+        class="drink"
+        id="teaXtraLarge"
+        value="4.50"
+        data-order="Xtra Large Tea"
+      >
+        <span>Xtra Large Tea</span>  $4.50
+      </button>
+    </div>
+  </section>
+
+  <section class="designBox">
+    <h4>juice</h4>
+    <div id="juice">
+      <button
+        class="drink"
+        id="ginger Shot"
+        value="3.50"
+        data-order="Ginger Shot"
+      >
+        <span>Ginger Shot</span>  $3.15
+      </button>
+      <button
+        class="drink"
+        id="juiceSmall"
+        value="3.50"
+        data-order="Small juice"
+      >
+        <span>Small juice</span>  $3.50
+      </button>
+      <button
+        class="drink"
+        id="juiceMedium"
+        value="4.50"
+        data-order="Medium juice"
+      >
+        <span>Medium juice</span>  $4.50
+      </button>
+      <button
+        class="drink"
+        id="juiceLarge"
+        value="5.50"
+        data-order="Large juice"
+      >
+        <span>Large juice</span>  $5.50
+      </button>
+      <button
+        class="drink"
+        id="juiceXtraLarge"
+        value="5.50"
+        data-order="Xtra Large juice"
+      >
+        <span>Xtra Large juice</span>  $5.50
+      </button>
+    </div>
+  </section>
+
+  <section class="designBox">
+    <h4>smoothie</h4>
+    <div id="smoothie">
+      <button
+        class="drink"
+        id="smoothieStraw"
+        value="2.50"
+        data-order="Strawberry"
+      >
+        <span>Strawberry</span>  $2.50
+      </button>
+      <button
+        class="drink"
+        id="smoothieMixBerry"
+        value="2.50"
+        data-order="Mixed Berry"
+      >
+        <span>Mixed Berry</span>  $2.50
+      </button>
+      <button
+        class="drink"
+        id="smoothieBlue"
+        value="3.50"
+        data-order="Blueberry"
+      >
+        <span>blueBerry</span>  $3.50
+      </button>
+
+      <button
+        class="drink"
+        id="smoothieMango"
+        value="4.50"
+        data-order="mango"
+      >
+        <span>Mango</span>  $4.50
+      </button>
+      <button class="drink" id="citrus" value="4.50" data-order="Citrus">
+        <span>Citrus</span>  $4.50
+      </button>
+    </div>
+  </section>
+
+  <section class="designBox">
+    <h4>Order</h4>
+    <div id="totalBox">
+      <ul>
+        <li class="total"></li>
+      </ul>
+    </div>
+  </section>
+
+</section>
+   
     <section class="choices">
       <section class="designBox">
-        <div id="coffee">
+        <h4>donuts</h4>
+        <div id="donut">
           <button
-            class="drink"
-            id="coffeeSmall"
+            class="food"
+            id="classicDonut"
             value="2.50"
-            data-order="Small coffee"
+            data-order="Classic Donut "
           >
-            <span>Small coffee</span><br /><br />$2.50
+            <span>Classic</span>  $2.45
           </button>
           <button
-            class="drink"
-            id="coffeeMedium"
+            class=" food"
+            id="chocolate"
+            value="2.50"
+            data-order="Chocolate Donut"
+          >
+            <span>Chocolate</span>  $2.50
+          </button>
+          <button
+            class="food"
+            id="jellyDonut"
             value="3.50"
-            data-order="Medium coffee"
+            data-order="Jelly Donut"
           >
-            <span>Medium coffee</span><br /><br />$3.50
+            <span>Jelly</span>  $3.50
           </button>
           <button
-            class="drink"
-            id="coffeeLarge"
+            class="food"
+            id="sprinkleDonut"
             value="4.50"
-            data-order="Large coffee"
+            data-order="Sprinkle Donut"
           >
-            <span>Large coffee</span><br /><br />$4.50
+            <span>Sprinkle</span>  $4.50
+          </button>
+          <button
+            class=" food"
+            id="bostonCremeDonut"
+            value="4.50"
+            data-order="Boston Creme Donut"
+          >
+            <span>Boston Creme</span>  $5.50
           </button>
         </div>
       </section>
+
       <section class="designBox">
-        <div id="tea">
+        <h4>bagel</h4>
+        <div id="bagel">
           <button
-            class="drink"
-            id="teaSmall"
+            class="food"
+            id="regularBagel"
             value="2.50"
-            data-order="Small tea"
+            data-order="regular Bagel"
           >
-            <span>Small tea</span><br /><br />$2.50
+            <span>Regular</span>  $2.45
+          </button>
+
+          <button
+            class="food"
+            id="everythingBagel"
+            value="2.50"
+            data-order="Everything Bagel"
+          >
+            <span>Everything </span>  $2.50
           </button>
           <button
-            class="drink"
-            id="teaMedium"
+            class="food"
+            id="pumpernickleBagel"
             value="3.50"
-            data-order="Medium tea"
+            data-order="Pumpernickle Bagel"
           >
-            <span>Medium tea</span><br /><br />$3.50
+            <span>Pumpernickle</span>  $3.50
           </button>
           <button
-            class="drink"
-            id="teaLarge"
+            class="food"
+            id="poppyBagel"
             value="4.50"
-            data-order="Large tea"
+            data-order="Poppy Bagel"
           >
-            <span>Large tea</span><br /><br />$4.50
+            <span>Poppy</span>  $4.50
+          </button>
+          <button
+            class="food"
+            id="garlicBagel"
+            value="4.50"
+            data-order="Garlic Bagel"
+          >
+            <span>Garlic</span>  $4.50
           </button>
         </div>
       </section>
+
       <section class="designBox">
-        <div id="juice">
+        <h4>scone</h4>
+        <div id="scone">
           <button
-            class="drink"
-            id="juiceSmall"
+            class="food"
+            id="Chocolate scone"
             value="3.50"
-            data-order="Small juice"
+            data-order="Chocolate Scone"
           >
-            <span>Small juice</span><br /><br />$3.50
+            <span>Chocolate</span>  $3.15
           </button>
           <button
-            class="drink"
-            id="juiceMedium"
+            class="food"
+            id="sconeBlueberry"
+            value="3.50"
+            data-order="Blueberry Scone"
+          >
+            <span>Blueberry</span>  $3.50
+          </button>
+          <button
+            class="food"
+            id="sconeStrawberry"
             value="4.50"
-            data-order="Medium juice"
+            data-order="Strawberry Scone"
           >
-            <span>Medium juice</span><br /><br />$4.50
+            <span>Strawberry</span>  $4.50
           </button>
           <button
-            class="drink"
-            id="juiceLarge"
+            class="food"
+            id="sconeCoconut"
             value="5.50"
-            data-order="Large juice"
+            data-order="Coconut Scone"
           >
-            <span>Large juice</span><br /><br />$5.50
+            <span>Coconut</span>  $5.50
+          </button>
+          <button
+            class="food"
+            id="sconeRambutan"
+            value="5.50"
+            data-order="Rambutan Scone"
+          >
+            <span>Rambutan</span>  $5.50
+          </button>
+        </div>
+      </section>
+
+      <section class="designBox">
+        <h4>muffin</h4>
+        <div id="muffin">
+          <button
+            class="food"
+            id="muffinRaspberry"
+            value="2.50"
+            data-order="Raspberry Muffin"
+          >
+            <span>Raspberry muffin</span>  $2.50
+          </button>
+          <button
+            class="food"
+            id="muffinWalnut"
+            value="2.50"
+            data-order="Walnut muffin"
+          >
+            <span>walnut muffin</span>  $2.50
+          </button>
+          <button
+            class="food"
+            id="muffinCoconut"
+            value="3.50"
+            data-order="Coconut muffin"
+          >
+            <span>Coconut muffin</span>  $3.50
+          </button>
+
+          <button
+            class="food"
+            id="muffinPumpkin"
+            value="4.50"
+            data-order="pumpkin muffin"
+          >
+            <span>pumpkin muffin</span>  $4.50
+          </button>
+          <button class="food" id="bananaNutMuffin" value="4.50" data-order="banana nut muffin">
+            <span>banana nut muffin</span>  $4.50
           </button>
         </div>
       </section>
       <section class="designBox">
-          <h4>Order</h4>
-        <div id="totalBox">
-          
-          <ul>
-            <li class="total"></li>
-          </ul>
+        <h4>Add Ons</h4>
+        <div id="additives">
+          <button
+            class="food"
+            id="brownSugar"
+            value="2.50"
+            data-order="brown sugar"
+          >
+            <span>brown sugar</span>  $2.50
+          </button>
+          <button
+            class="food"
+            id="cream"
+            value="2.50"
+            data-order="cream"
+          >
+            <span>cream</span>  $2.50
+          </button>
+          <button
+            class="food"
+            id="mochaFlavoring"
+            value="3.50"
+            data-order="mochaFlavoring"
+          >
+            <span>mocha flavoring</span>  $3.50
+          </button>
+
+          <button
+            class="food"
+            id="hazelFlavoring"
+            value="4.50"
+            data-order="hazelFlavoring"
+          >
+            <span>hazel flavoring</span>  $4.50
+          </button>
+          <button class="food" id="citrus" value="4.50" data-order="Citrus">
+            <span>peppermint flavoring</span>  $4.50
+          </button>
         </div>
       </section>
 
-      <!-- <section class="designBox">
-
+      <!-- <section class='choices'>
+        
+        <div id="additives">
+          <h4>Additives</h4>
+            <button class="additive" id="regSugar" value=".25" data-order="Regular Sugar">
+              <span>Regular Sugar</span>  $0.25
+            </button>
+            <button class="additive" id="splenda" value=".25" data-order="Splenda">
+              <span>Splenda</span>  $0.50
+            </button>
+            <button class="additive" id="agave" value=".25" data-order="Agave">
+              <span>Agave</span>  $0.75
+            </button>
+         </div>
       </section> -->
-      <!-- <div id="smoothie">
-        <button class="drink" id="teaSmall" value="2.50" data-order="Strawberry">
-          <span>Strawberry</span><br /><br />$2.50
-        </button>
-        <button class="drink" id="teaSmall" value="2.50" data-order="Mixed Berry">
-          <span>Mixed Berry</span><br /><br />$2.50
-        </button>
-        <button
-          class="drink"
-          id="teaMedium"
-          value="3.50"
-          data-order="Blueberry"
-        >
-          <span>blueBerry</span><br /><br />$3.50
-        </button>
-        <button class="drink" id="teaLarge" value="4.50" data-order="mango">
-          <span>Mango</span><br /><br />$4.50
-        </button>
-        <button class="drink" id="teaLarge" value="4.50" data-order="Citrus">
-          <span>Citrus</span><br /><br />$4.50
-        </button>
-        
-      </div> 
-    
-    <div id="additives">
 
-      
-        <button class="additive" id="regSugar" value=".25" data-order="Regular Sugar">
-          <span>Regular Sugar</span><br /><br />$0.25
-        </button>
-        <button class="additive" id="splenda" value=".25" data-order="Splenda">
-          <span>Splenda</span><br /><br />$0.50
-        </button>
-        <button class="additive" id="agave" value=".25" data-order="Agave">
-          <span>Agave</span><br /><br />$0.75
-        </button>
-
-        <button class="drink" id="teaSmall" value="2.50" data-order="Mixed Berry">
-          <span>Mixed Berry</span><br /><br />$2.50
-        </button>
-        <button
-          class="drink"
-          id="teaMedium"
-          value="3.50"
-          data-order="Blueberry"
-        >
-          <span>blueBerry</span><br /><br />$3.50
-        </button>
-        <button class="drink" id="teaLarge" value="4.50" data-order="mango">
-          <span>Mango</span><br /><br />$4.50
-        </button>
-        <button class="drink" id="teaLarge" value="4.50" data-order="Citrus">
-          <span>Citrus</span><br /><br />$4.50
-        </button>
-        
-      </div>-->
-
-      <!-- discuss with nathan about how he did his additives. So we can add cream for the coffee or tea. Juice you can decide if you want a straw or not.  -->
+      <!-- discuss with nathan about how he did his additives. So we can add cream for the Donut or tea. Juice you can decide if you want a straw or not.  -->
     </section>
-<!-- juice will have different berries to put in your juice, smoothie will have different herbs and berries -->
-  <!-- <div class='coffeeAdditives'></div>
+    <!-- juice will have different berries to put in your juice, muffin will have different herbs and berries -->
+    <!-- <div class='DonutAdditives'></div>
   <div class='teaAdditives'></div>
   <div class='juiceAdditives'></div> -->
 

@@ -64,7 +64,15 @@
                   <td><%= coffeeOrders[i].customerName %></td>
                   
                   
-                  <td><span><%= coffeeOrders[i].coffee %></span> <br> <span><%= coffeeOrders[i].tea %></span><br><span><%= coffeeOrders[i].juice %></span></td>
+                  <td><span><%= coffeeOrders[i].coffee %></span><br>
+                    <span><%= coffeeOrders[i].tea %></span><br>
+                    
+                    <span><%= coffeeOrders[i].juice %></span>
+                    <span><%= coffeeOrders[i].smoothie %></span>
+                    <span><%= coffeeOrders[i].donuts%></span>
+                    <span><%= coffeeOrders[i].bagel %></span>
+                    <span><%= coffeeOrders[i].scone %></span>
+                    <span><%= coffeeOrders[i].additives %></span></td>
 
                   <% if (coffeeOrders[i].status) { %>
                     <td><span class="completed">Complete</span></td>

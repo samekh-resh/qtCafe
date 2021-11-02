@@ -21,6 +21,13 @@ module.exports = function (app, passport, db, mongodb) {
         coffee: req.body.coffee,
         tea: req.body.tea,
         juice: req.body.juice,
+        smoothie: req.body.smoothie,
+        donuts: req.body.donuts,
+        bagel: req.body.bagel,
+        scone: req.body.scone,
+        muffin: req.body.muffin,
+        additives: req.body.additives,
+
         total: 0,
         // total: req.body.total,
         status: false,
