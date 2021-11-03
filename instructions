@@ -17,3 +17,11 @@ Community:
 -Add total to database
 
 -how to delete 
+
+
+color: #4c5760; //dark color
+background: rgba(224, 184, 109, 0.877); //lighter cooler
+  background: #66635B;
+  background: #A59E8C;
+    background:  #4c5760;
+

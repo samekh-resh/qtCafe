@@ -4,7 +4,7 @@ let buttons = document.querySelectorAll('.drink')
 let secondButtons = document.querySelectorAll('.food')
 // let food = document.querySelectorAll('.food')
 
-let allOrders = { coffee: [], tea: [], juice: [], smoothie: [], donuts:[], bagel:[], scone:[], muffin:[], additives:[] }
+let allOrders = { coffee: [], tea: [], juice: [], smoothie: [], donut:[], bagel:[], scone:[], muffin:[], additives:[] }
 
 let name = document.querySelector('#customerName')
 

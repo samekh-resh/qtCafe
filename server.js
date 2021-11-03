@@ -14,6 +14,10 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const configDB = require('./config/database.js');
+
+
+console.log(process.env)
+ 
 let db
 
 // configuration ===============================================================

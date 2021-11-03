@@ -4,7 +4,7 @@ body {
   color: #4c5760;
 }
 button:hover {
-  background: rgb(248, 105, 105);
+  background: rgba(224, 184, 109, 0.877);
 }
 
 a {
@@ -80,7 +80,6 @@ ul {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-
   /* overflow:auto; */
   background: #A59E8C;
 }
@@ -106,7 +105,7 @@ h1 {
   padding: 0%;
   background:  #4c5760;
   border-radius: 30px;
-  width: 10%;
+  width: 20%;
   color:rgb(236, 224, 199);
   font-size: 4vw;
   box-shadow: 6px 6px 2px 1px rgba(252, 216, 192, 0.938);
@@ -132,6 +131,7 @@ h4 {
   border-radius: 30px;
   font-size: 1.6vw;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+  white-space: nowrap;
 }
 
 li {
