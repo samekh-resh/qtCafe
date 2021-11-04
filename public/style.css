@@ -207,3 +207,7 @@ body {
 .hide{
   display:none;
 }
+
+.form-group{
+  margin-bottom:1%;
+}

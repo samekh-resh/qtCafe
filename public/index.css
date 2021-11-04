@@ -1,9 +1,25 @@
 body {
-  background: blanchedalmond;
+  background: #66635B;
 }
 
+a{
+  color: rgba(224, 184, 109, 0.877); 
+}
+a:hover{
+  color: rgba(230, 170, 61, 0.877); 
+  text-decoration: none;
+
+}
+.logForSignUp{
+  color: rgba(224, 184, 109, 0.877); 
+  background: #66635B;
+  padding:1%;
+}
+.form-group{
+  margin-bottom:1%;
+}
 .container {
-  background: blue;
+  background: rgba(224, 184, 109, 0.877);
   width: 500px;
   height: 300px;
   margin-top: 15%;
@@ -17,8 +33,12 @@ body {
   border-radius: 10% 30% 40% 40%;
 }
 
+hr{
+  visibility:hidden;
+}
+
 .signUp {
-  background: blue;
+  background: rgba(224, 184, 109, 0.877);
   width: 500px;
   height: 300px;
   margin-top: 15%;

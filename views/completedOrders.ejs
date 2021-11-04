@@ -24,7 +24,7 @@
     <div class="row">
 
         <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <h3>Order Queue</h3>          
           <table class="table">
             <thead>
@@ -34,6 +34,7 @@
                 <th scope="col">Order</th>
                 <th scope="col">Barista</th>
                 <th scope="col">Served</th>
+                <th scope="col">delete</th>
 
               </tr>
             </thead>
@@ -46,7 +47,7 @@
                   <th scope="row"><%= i + 1 %></th>
                   <td><%= coffeeOrders[i].customerName %></td>
                   <td><span><%= coffeeOrders[i].coffee %></span> <br> <span><%= coffeeOrders[i].tea %></span><br><span><%= coffeeOrders[i].juice %></span></td><td><%= coffeeOrders[i].barista %></td><td><i class="fas fa-user-check"></i></td>
-
+                  <td><i id="<%= coffeeOrders[i]._id %>" class="fas fa-trash-alt"></i></td>
                 <% } %>
                 </tr> 
               <% } %>

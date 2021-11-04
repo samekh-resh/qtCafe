@@ -51,8 +51,6 @@ ul {
 .choices {
   display: flex;
   justify-content: space-evenly;
-  padding: 2%;
-  /* margin: 7px 15px 7px 15px; */
 }
 
 .designBox {
@@ -129,7 +127,7 @@ h4 {
   margin-bottom: 10px;
   font-size: 100%;
   border-radius: 30px;
-  font-size: 1.6vw;
+  font-size: 1.3vw;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
   white-space: nowrap;
 }

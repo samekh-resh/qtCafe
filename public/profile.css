@@ -1,23 +1,32 @@
 body{
     background: url("/img/cafeBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.loginInfo{
-    background: rgba(0, 255, 179, 0.829);
-    color: black;
+tbody{
+    padding: 5z5;
 }
-
 h3{
     color: white;
-    background: rgba(18, 185, 27, 0.671);
+    background: #66635B;
     padding: 2px;
 }
 
 th{
-    background: rgba(88, 250, 82, 0.685);
+    background: #A59E8C;
 }
 
 tr{
-    background: rgba(18, 112, 60, 0.829);
+    background:  #4c5760;
     color: white;
+}
+
+.loginInfo{
+    width: 40%;
+    margin:auto;
+    padding: 1%;
+    border-radius: 30px;
+    background: #a59e8cd0;
+
 }
