@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+   }
 // server.js
 
 // set up ======================================================================
@@ -14,9 +17,6 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const configDB = require('./config/database.js');
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-   }
 
 console.log(process.env)
  
